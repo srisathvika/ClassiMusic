@@ -1,0 +1,140 @@
+:root {
+  --primary: gray;
+  --dark: rgb(19, 19, 19);
+  --light: rgb(204, 204, 204);
+  --shadow: 0 4px 7px rgba(104, 104, 104, 0.8);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html {
+  box-sizing: border-box;
+  color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: rgb(27, 26, 26);
+}
+
+.btn {
+  background-color: white;
+  color: var(--dark);
+  padding: 0.6rem 1.2rem;
+  border-radius: 1.3rem;
+  text-align: center;
+  margin-left: 72rem;
+}
+
+img {
+  height: 155px;
+  width: 155px;
+  max-width: 100%;
+}
+
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+/* Sidebar */
+
+#sidebar{
+    background-color:black;
+    width: 14.5rem;
+    height: 100vh;
+    display:grid;
+    position: fixed;
+}
+
+#sidebar #logo{
+    margin-left: 0.4rem;
+    margin-top: 1rem;
+}
+
+#sidebar img{
+    height: 3rem;
+    width: 3rem;
+    border-radius: 50%; 
+    margin-left: 1.5rem;
+    margin-top: 0.9rem;  
+}
+
+#sidebar p{
+    font-size: 1.4rem;
+    display: block;
+    margin-top: -2.4rem;
+    margin-left: 5rem;
+}
+
+#sidebar #sideitems{
+    display: grid;
+    grid-gap: .2rem;
+    grid-template-columns: repeat(1,1fr);
+    padding: 1.2rem;
+    margin-top: -2rem;
+    list-style:none;
+}
+
+#sidebar a{
+    text-decoration: none;
+    display:block;
+    font-size: 1rem ;
+    color: var(--light);
+}
+#sidebar a:hover{
+    color: white;
+}
+#sidebar i{
+    margin-right:1.2rem;
+}
+
+#sidebar #random-links{
+    display:grid;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#sidebar #random-links ul{
+    list-style:none;
+    padding: 1.6rem;
+    display:grid;
+    grid-gap: .5rem;
+    grid-template-columns: repeat(2,1fr);
+}
+
+#sidebar #random-links a{
+    font-size: .7rem;
+}
+#sidebar #random-links a:hover{
+    text-decoration: underline;
+}
+
+#sidebar #language {
+    border: 1px solid white;
+    border-radius: 2rem;
+    text-align: center;
+    justify-content: center;
+    width: 6rem;
+    padding: .5rem;
+    height: 1.4rem;
+    margin-left: 1.8rem;
+}
+
+#sidebar #language i{
+    padding: .1rem;
+    margin-right: 0rem;
+}
+
+/* Navbar */
+
+#navbar {
+  background-color: var(--dark);
+  height: 4.2rem;
+}
+
+
+
+

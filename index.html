@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SpotifyClone</title>
     <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/8ce9823005.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
@@ -17,27 +18,29 @@
     <div id="sidebar">
         <div id="logo">
             <img src="img/logo.png" alt="">
+            <p>Spotify</p>
         </div>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Search</a></li>
-            <li><a href="#">Your Library</a></li>
-            <li><a href="#">Create Playlist</a></li>
-            <li><a href="#">Liked Songs</a></li>
+        <ul id="sideitems">
+            <li><a href="#"><i class="fa-solid fa-house fa-2x" style="color: #ffffff;"></i>Home</a></li>
+            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: #ffffff;"></i>Search</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Your Library</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Create Playlist</a></li>
+            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Liked Songs</a></li>
         </ul>
 
         <div id="random-links">
             <ul>
                 <li><a href="#">Legal</a></li>
-                <li><a href="#">Privacy Center</a></li>
-                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Privacy&nbsp;Center</a></li>
+                <li><a href="#">Privacy&nbsp;Policy</a></li>
                 <li><a href="#">Cookies</a></li>
-                <li><a href="#">About Ads</a></li>
+                <li><a href="#">About&nbsp;Ads</a></li>
                 <li><a href="#">Accessibility</a></li>
             </ul>
         </div>
 
         <div id="language">
+            <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
             English
         </div>
     </div>
@@ -45,13 +48,15 @@
     <!-- navbar -->
 
     <nav id="navbar">
-        <div id="navigation">
-
-        </div>
+        <!-- <div id="navi">
+            <i class="fa-solid fa-chevron-left fa-2x" style="color: #ffffff;"></i>
+            <i class="fa-solid fa-chevron-right fa-2x" style="color: #ffffff;"></i>    
+        </div> -->
         <ul>
-            <li><a href="#">Sign up</a></li>
-            <button class="btn">Log in</button>
+            <li><a href="#" id="a1">Sign&nbsp;up</a></li>
+            <li><a href="#" class="btn">Log in</a></li>
         </ul>
+        
     </nav>
 
     <!-- focus-container -->
@@ -194,7 +199,9 @@
             </div>
         </div>
         <div id="socials">
-
+            <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: #ffffff;"></i></a>
+            <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i></a>
         </div>
         <hr>
         <div class="copyr">
