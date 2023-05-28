@@ -15,7 +15,8 @@ body{
 }
 
 nav{
-    /* position:sticky; */
+    position:sticky;
+    top: 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -24,7 +25,6 @@ nav{
     padding-right: 5rem;
     background-color: black;
     height: 5.5rem;
-    width: 100vw;
 }
 nav .logo a{
     text-decoration: none;
@@ -93,17 +93,17 @@ nav .btn button:hover{
     'trending trending box1'
     'trending trending box2'
     ;
+    background-color: #101010;
 }
 
 .trending{
     grid-area: trending;
-    min-height: 350px;
+    min-height: 300px;
     padding: 3rem;
     display: flex;
     flex-direction:row;
     align-items: start;
     justify-content: center;
-    background-color: #101010;
 }
 .trending img{
     border-radius: 1rem;
@@ -127,12 +127,12 @@ nav .btn button:hover{
 }
 
 /* Focus */
-#focus h2{
+.focus h2{
     padding-left:2rem ;
 
 }
 
-#focus .container{
+.focus .container{
     display: grid;
     grid-gap: 1.5rem;
     grid-template-areas:
@@ -141,24 +141,24 @@ nav .btn button:hover{
     padding: 1.5rem;
 }
 
-#focus .heading {
+.focus .heading {
     padding-top: 1rem;
     display: flex;
     justify-content: space-between;
 }
 
-#focus .heading a{
+.focus .heading a{
     text-decoration: none;
     color: var(--text_color);
     padding-right: 4rem;
 }
 
-#focus .heading a:hover{
+.focus .heading a:hover{
     text-decoration: underline;
     color: white;
 }
 
-#focus .container .box{
+.focus .container .box{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -170,17 +170,21 @@ nav .btn button:hover{
     border-radius: .5rem;
 }
 
-#focus .container .box img{
+.focus .container .box:hover{
+    background-color: #3e3e3e;
+}
+
+.focus .container .box img{
     border-radius: .4rem;
 }
 
-#focus .box h3{
+.focus .box h3{
     padding: 1rem;
     padding-bottom: .7rem;
     font-size: 1.1rem;
 }
 
-#focus .box p{
+.focus .box p{
     text-align: center;
     color: var(--text_color);
 }
