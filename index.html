@@ -1,217 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SpotifyClone</title>
+    <title>ClassiMusic</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/8ce9823005.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
+    <div class="wrapper">
 
-<!-- Wrapper -->
+        <!-- navbar -->
 
-<div class="wrapper">
+        <nav>
+            <div class="logo">
+                <a href="#" >
+                    <img src="img/logo.png" alt="ClassiMusic">ClassiMusic
+                </a>
+            </div>
 
-    <!-- sidebar -->
-    <div id="sidebar">
-        <div id="logo">
-            <img src="img/logo.png" alt="">
-            <p>Spotify</p>
-        </div>
-        <ul id="sideitems">
-            <li><a href="#"><i class="fa-solid fa-house fa-2x" style="color: #ffffff;"></i>Home</a></li>
-            <li><a href="#"><i class="fa-solid fa-magnifying-glass fa-2x" style="color: #ffffff;"></i>Search</a></li>
-            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Your Library</a></li>
-            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Create Playlist</a></li>
-            <li><a href="#"><i class="fa-solid fa-heart fa-2x" style="color: #ffffff;"></i>Liked Songs</a></li>
-        </ul>
-
-        <div id="random-links">
             <ul>
-                <li><a href="#">Legal</a></li>
-                <li><a href="#">Privacy&nbsp;Center</a></li>
-                <li><a href="#">Privacy&nbsp;Policy</a></li>
-                <li><a href="#">Cookies</a></li>
-                <li><a href="#">About&nbsp;Ads</a></li>
-                <li><a href="#">Accessibility</a></li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Search</a></li>
+                <li><a href="#">Your Library</a></li>
+                <li><a href="#">Create playlist</a></li>
+                <li><a href="#">Liked Songs</a></li>
             </ul>
-        </div>
+            <div class="btn">
+                <a href="#">Sign up</a>
+                <button type="button">Log in</button>
+            </div>
 
-        <div id="language">
-            <i class="fa-solid fa-globe" style="color: #ffffff;"></i>
-            English
-        </div>
-    </div>
+        </nav>
 
-    <!-- navbar -->
+        <!-- trending -->
 
-    <nav id="navbar">
-        <!-- <div id="navi">
-            <i class="fa-solid fa-chevron-left fa-2x" style="color: #ffffff;"></i>
-            <i class="fa-solid fa-chevron-right fa-2x" style="color: #ffffff;"></i>    
-        </div> -->
-        <ul>
-            <li><a href="#" id="a1">Sign&nbsp;up</a></li>
-            <li><a href="#" class="btn">Log in</a></li>
-        </ul>
+        <section id="home">
+            <header class="trending">
+                <img src="https://picsum.photos/500/450?random=1">
+                <div class="text">
+                    <p>PLAYLIST</p>
+                    <h1>Top Trending India</h1>
+                    <p>Listen to India's top viral tracks!</p>
+                </div>
+
+            </header>
+        </section>
         
-    </nav>
-
-    <!-- focus-container -->
-
-    <div id="focus" class="container">
-        <h2>Focus</h2>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=1">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=2">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=3">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=4">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=5">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-    </div>
-
-    <!-- playlist-container -->
-
-    <div id="playlist" class="container">
-
-        <h2>Spotify Playlists</h2>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=1">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=2">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=3">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=4">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=5">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-    <div id="sleep" class="container">
-
-        <h2>Sleep</h2>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=1">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=2">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-    </div>
-    <div id="soundOfIndia" class="container">
-
-        <h2>Sound of India</h2>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=1">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=2">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=3">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=4">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
-        <div class="box">
-            <img src="https://picsum.photos/200/200?random=5">
-            <h3>heading</h3>
-            <p class="para">Lorem ipsum dolor sit amet consectetur.</p>
-        </div>
+        <section id="focus">
+            <div class="heading">
+                <h2>Focus</h2>
+                <a href="#">Show all</a>
+            </div>
+            <div class="container">
+                <div class="box" id="box1">
+                    <img src="https://picsum.photos/180/170?random=2">
+                    <h3>Peaceful Piano</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="box" id="box2">
+                    <img src="https://picsum.photos/180/170?random=3">
+                    <h3>Deep Focus</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="box" id="box3">
+                    <img src="https://picsum.photos/180/170?random=4">
+                    <h3>Instrumental Study</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="box" id="box4">
+                    <img src="https://picsum.photos/180/170?random=5">
+                    <h3>Focus Flow</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+                <div class="box" id="box5">
+                    <img src="https://picsum.photos/180/170?random=6">
+                    <h3>Workday Lounge</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                </div>
+            </div>
+        </section>
 
     </div>
 
-    <footer>
-        <div id="item1" class="links">
-            <h3>Company</h3>
-            <div class="item">
-                <ul>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">For the Record</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="item2" class="links">
-            <h3>Communities</h3>
-            <div class="item">
-                <ul>
-                    <li><a href="#">For Artists</a></li>
-                    <li><a href="#">Developers</a></li>
-                    <li><a href="#">Advertising</a></li>
-                    <li><a href="#">Investors</a></li>
-                    <li><a href="#">Vendors</a></li>
-                    <li><a href="#">Spotify for Work</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="item3" class="links">
-            <h3>Useful links</h3>
-            <div class="item">
-                <ul>
-                    <li><a href="#">Support</a></li>
-                    <li><a href="#">Free Mobile App</a></li>
-                </ul>
-            </div>
-        </div>
-        <div id="socials">
-            <a href="#"><i class="fa-brands fa-instagram fa-2x" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-twitter fa-2x" style="color: #ffffff;"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook fa-2x" style="color: #ffffff;"></i></a>
-        </div>
-        <hr>
-        <div class="copyr">
-            &copy; 2023 Spotify AB
-        </div>
-    </footer>
 
-</div>
-<!-- wrapper ends -->
-    
-<script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
+
+
+
+
