@@ -1,6 +1,5 @@
 :root{
     --text_color:rgb(143 135 135);
-    --shadow: 0 4px 7px rgba(104, 104, 104, 0.8);
 }
 
 *{
@@ -23,7 +22,7 @@ nav{
     padding-top: .5rem;
     padding-left: 2rem;
     padding-right: 5rem;
-    background-color: black;
+    background-color:#0a0a0a;
     height: 5.5rem;
 }
 nav .logo a{
@@ -187,6 +186,29 @@ nav .btn button:hover{
 .focus .box p{
     text-align: center;
     color: var(--text_color);
+}
+
+/* footer */
+
+footer{
+    height: 8rem;
+}
+
+footer p{
+    color: var(--text_color);
+}
+footer .socials{
+    display: inline-flex;
+    justify-content: end;
+}
+
+footer i{
+    padding: 1rem;
+}
+
+footer i .icon{
+    background-color: #1e1e1e;
+
 }
 
 
