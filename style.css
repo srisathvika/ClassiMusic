@@ -191,26 +191,52 @@ nav .btn button:hover{
 /* footer */
 
 footer{
-    height: 8rem;
+    height: 12rem;
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    padding-top: 1.2rem;
 }
 
 footer p{
     color: var(--text_color);
+    margin-left: 3rem;
 }
 footer .socials{
-    display: inline-flex;
-    justify-content: end;
-}
-
-footer i{
     padding: 1rem;
 }
 
-footer i .icon{
-    background-color: #1e1e1e;
-
+footer i{
+    margin: .2rem;
 }
+ .fa-instagram{
+    background-color: #1e1e1e;
+    border: 2px solid transparent;
+    padding: .5rem;
+    border-radius: 50%;
+ }
+ .fa-facebook{
+    background-color: #1e1e1e;
+    border: 2px solid transparent;
+    padding: .5rem;
+    border-radius: 50%;
+ }
+ .fa-twitter{
+    background-color: #1e1e1e;
+    border: 2px solid transparent;
+    padding: .5rem;
+    border-radius: 50%;
+ }
 
+ .fa-facebook:hover{
+    background-color: #3e3e3e;
+ }
+ .fa-instagram:hover{
+    background-color: #3e3e3e;
+ }
+ .fa-twitter:hover{
+    background-color: #3e3e3e;
+ }
 
 
 
