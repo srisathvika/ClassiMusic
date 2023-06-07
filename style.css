@@ -171,6 +171,7 @@ nav .btn button:hover{
 
 .focus .container .box:hover{
     background-color: #3e3e3e;
+    /* <i class="fa-solid fa-circle-play fa-2x" style="color: #1ed760;"></i> */
 }
 
 .focus .container .box img{
@@ -191,7 +192,7 @@ nav .btn button:hover{
 /* footer */
 
 footer{
-    height: 13.5rem;
+    height: 7rem;
     display: flex;
     align-content: center;
     justify-content: space-between;
@@ -253,6 +254,7 @@ footer i{
 
  #progressBar{
     width: 25rem;
+    cursor: pointer;
  }
 
  .icons{
@@ -262,6 +264,17 @@ footer i{
  .icons i{
     cursor: pointer;
     padding: .5rem;
+ }
+
+ .songInfo{
+    position: absolute;
+    left: 4rem;
+ }
+
+ .songInfo img{
+    height: 3.2rem;
+    width: 3.2rem;
+    border-radius: .2rem;
  }
 
 
