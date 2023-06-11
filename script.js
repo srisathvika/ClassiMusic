@@ -4,6 +4,7 @@ console.log("Welcome to ClassiMusic");
 let songIndex=0;
 let audioElement = new Audio('1.mp3');
 let masterPlay = document.getElementById('masterPlay');
+let masterSongName = document.getElementById('masterSongName');
 let progressBar = document.getElementById('progressBar');
 let box = Array.from(document.getElementsByClassName('box'));
 
@@ -26,7 +27,7 @@ let songs=[
 ]
 
 box.forEach((element,i)=>{
-    console.log(element,i);
+    // console.log(element,i);
     element.getElementsByTagName("img")[0].src=songs[i].coverPath;
     element.getElementsByClassName("songName")[0].innerText=songs[i].songName;
 
@@ -58,4 +59,55 @@ audioElement.addEventListener('timeupdate',()=>{
 
 progressBar.addEventListener('change',()=>{
     audioElement.currentTime=progressBar.value*audioElement.duration/100;
+})
+
+const makeAllPlays=()=>{
+
+    Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+        element.classList.remove('fa-pause');
+        element.classList.add('fa-play');
+    })
+}
+
+Array.from(document.getElementsByClassName('songItemPlay')).forEach((element)=>{
+    element.addEventListener('click',(e)=>{
+        // console.log(e.target);
+        makeAllPlays();
+        songIndex=parseInt(e.target.id);
+        e.target.classList.remove('fa-play');
+        e.target.classList.add('fa-pause');
+        audioElement.src=`songs/${songIndex}.mp3`;
+        masterSongName.innerText= songs[songIndex-1].songName;
+        audioElement.currentTime=0;
+        audioElement.play();
+        masterPlay.classList.remove('fa-circle-play');
+        masterPlay.classList.add('fa-circle-pause');
+    })
+})
+
+document.getElementById('next').addEventListener('click',()=>{
+    if(songIndex>=4){
+        songIndex=0;
+    }else{
+        songIndex+=1;
+    }
+    audioElement.src=`songs/${songIndex+1}.mp3`;
+    masterSongName.innerText= songs[songIndex-1].songName;
+    audioElement.currentTime=0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
+})
+document.getElementById('previous').addEventListener('click',()=>{
+    if(songIndex<0){
+        songIndex=0;
+    }else{
+        songIndex-=1;
+    }
+    audioElement.src=`songs/${songIndex+1}.mp3`;
+    masterSongName.innerText= songs[songIndex-1].songName;
+    audioElement.currentTime=0;
+    audioElement.play();
+    masterPlay.classList.remove('fa-circle-play');
+    masterPlay.classList.add('fa-circle-pause');
 })

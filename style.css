@@ -178,6 +178,12 @@ nav .btn button:hover{
     border-radius: .4rem;
 }
 
+.focus .container .box i{
+    position: absolute;
+    top: 128%;
+    cursor: pointer;
+}
+
 .focus .box h3{
     padding: 1rem;
     padding-bottom: .7rem;
