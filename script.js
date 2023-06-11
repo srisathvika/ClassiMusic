@@ -10,20 +10,20 @@ let box = Array.from(document.getElementsByClassName('box'));
 
 let songs=[
     {songName:'Meghalu Lekunna', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=2"},
-    {songName:'Jare Jare', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=3"},
-    {songName:'Mella Mellaga', filePath:'1.mp3',coverPath:"https://picsum.photos/180/170?random=4"},
-    {songName:'Tere Bina', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=5"},
-    {songName:'Aise Kyun', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=6"},
+    {songName:'Jare Jare', filePath:'2.mp3', coverPath:"https://picsum.photos/180/170?random=3"},
+    {songName:'Mella Mellaga', filePath:'3.mp3',coverPath:"https://picsum.photos/180/170?random=4"},
+    {songName:'Tere Bina', filePath:'4.mp3', coverPath:"https://picsum.photos/180/170?random=5"},
+    {songName:'Aise Kyun', filePath:'5.mp3', coverPath:"https://picsum.photos/180/170?random=6"},
     {songName:'Saibo', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=7"},
-    {songName:'Sweety', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=8"},
-    {songName:'Sahiba', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=9"},
-    {songName:'Tere Naina', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=10"},
-    {songName:'Yathana', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=11"},
+    {songName:'Sweety', filePath:'2.mp3', coverPath:"https://picsum.photos/180/170?random=8"},
+    {songName:'Sahiba', filePath:'3.mp3', coverPath:"https://picsum.photos/180/170?random=9"},
+    {songName:'Tere Naina', filePath:'4.mp3', coverPath:"https://picsum.photos/180/170?random=10"},
+    {songName:'Yathana', filePath:'5.mp3', coverPath:"https://picsum.photos/180/170?random=11"},
     {songName:'Nasha', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=12"},
-    {songName:'Chaar Kadam', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=13"},
-    {songName:'Darasal', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=14"},
-    {songName:'Munve Vaa', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=15"},
-    {songName:'MalliRaava', filePath:'1.mp3', coverPath:"https://picsum.photos/180/170?random=16"},
+    {songName:'Chaar Kadam', filePath:'2.mp3', coverPath:"https://picsum.photos/180/170?random=13"},
+    {songName:'Darasal', filePath:'3.mp3', coverPath:"https://picsum.photos/180/170?random=14"},
+    {songName:'Munve Vaa', filePath:'4.mp3', coverPath:"https://picsum.photos/180/170?random=15"},
+    {songName:'MalliRaava', filePath:'5.mp3', coverPath:"https://picsum.photos/180/170?random=16"},
 ]
 
 box.forEach((element,i)=>{
